@@ -1,6 +1,10 @@
 # bi_work_lite 
 **注意本文档为AI生成可能有错误**
+
+从binary_work搬迁到此处，彻底拆分了C/C++版本，%n修改为size_t*
+
 C版本在bi_work_lite/C++版本在bi_work_lite_cpp
+
 ## 1. 概述
 
 `bi_work_lib_lite` 是一个轻量级二进制读写库，核心思想是**用 printf 风格格式化字符串描述二进制布局**，在**内存缓冲区**与 **FILE 文件流**之间按字段读写各种基本类型（int/float/double/short/char/字符串/原始字节等），并支持按格式串**批量反转字节序**。
